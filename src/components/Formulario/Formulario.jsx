@@ -4,7 +4,7 @@ import CampoTexto from "../CampoTexto";
 import ListaSuspensa from "../ListaSuspensa";
 import "./Formulario.css";
 
-export const Formulario = () => {
+export const Formulario = (props) => {
   const [nome, setNome] = useState("");
   const [cargo, setCargo] = useState("");
   const [imagem, setImagem] = useState("");
@@ -22,7 +22,12 @@ export const Formulario = () => {
 
   const aoSalvar = (event) => {
     event.preventDefault();
-    console.log(`Nome: ${nome}, Cargo: ${cargo}, Imagem: ${imagem}, Time: ${time}`);
+    props.aoColaboradorAdicionado({
+      nome,
+      cargo,
+      imagem,
+      time,
+    });
   };
 
   return (
