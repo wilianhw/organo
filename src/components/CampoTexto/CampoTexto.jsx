@@ -10,8 +10,7 @@ export const CampoTexto = (props) => {
       <label>{props.label}</label>
       <input
         onChange={aoDigitado}
-        value={props.value}
-        aoAlterado
+        value={props.valor}
         required={props.obrigatorio}
         placeholder={props.placeholder}
       ></input>

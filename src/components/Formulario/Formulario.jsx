@@ -18,6 +18,13 @@ export const Formulario = (props) => {
       imagem,
       time,
     });
+
+    setNome("");
+    console.log(nome)
+    setCargo("");
+    setImagem("");
+    setTime("");
+    console.log("Aqui");
   };
 
   return (
