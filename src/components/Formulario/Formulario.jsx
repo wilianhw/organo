@@ -10,16 +10,6 @@ export const Formulario = (props) => {
   const [imagem, setImagem] = useState("");
   const [time, setTime] = useState("");
 
-  const times = [
-    "Programção",
-    "Front-End",
-    "Data Science",
-    "Devops",
-    "UX e Design",
-    "Mobile",
-    "Inovação e Gestão",
-  ];
-
   const aoSalvar = (event) => {
     event.preventDefault();
     props.aoColaboradorAdicionado({
@@ -57,7 +47,7 @@ export const Formulario = (props) => {
         <ListaSuspensa
           valor={time}
           label="Time"
-          itens={times}
+          itens={props.times}
           aoAlterado={(valor) => setTime(valor)}
         />
         <Botao>Criar Card</Botao>
