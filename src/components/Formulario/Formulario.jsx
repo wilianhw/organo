@@ -20,11 +20,9 @@ export const Formulario = (props) => {
     });
 
     setNome("");
-    console.log(nome)
     setCargo("");
     setImagem("");
     setTime("");
-    console.log("Aqui");
   };
 
   return (

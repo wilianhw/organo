@@ -1,7 +1,6 @@
 import "./Colaborador.css";
 
 export const Colaborador = ({ nome, cargo, imagem }) => {
-  console.log(nome, cargo, imagem)
   return (
     <div className="colaborador">
       <div className="cabecalho">
